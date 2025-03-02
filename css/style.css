@@ -570,7 +570,7 @@ a {
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-overlay .open {
+.modal-overlay.is-open {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
@@ -591,7 +591,7 @@ a {
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
-.modal-overlay:not(.open) .modal {
+.modal-overlay:not(.is-open) .modal {
     transform: translate(-50%, -50%) scale(1.5);
 }
 
@@ -644,7 +644,7 @@ a {
 }
 
 .modal-close-button:hover+.close-icon,
-.modal-close-button:focus + .close-icon {
+.modal-close-button:focus+.close-icon {
     fill: #fff;
 }
 
