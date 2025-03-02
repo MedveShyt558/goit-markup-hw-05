@@ -614,7 +614,7 @@ a {
     justify-content: center;
 }
 
-.close-button {
+.modal-close-button {
     position: absolute;
     top: 24px;
     right: 24px;
